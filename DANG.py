@@ -22,6 +22,7 @@ token = os.environ.get('DANG')
 
 async def on_ready():
     print('Logged in as {0.user}'.format(bot))
+
     game = discord.Game("Escuchando !dhelp")
     await bot.change_presence(activity=game)
 
@@ -198,8 +199,4 @@ async def help_command(ctx):
         embed.add_field(name=command.name, value=command.description, inline=False)
     await ctx.send(embed=embed)
 
-#bot.run('OTg4OTE1MzczNDQzMjgwODk2.GT3SxN.PM7PDyaQ9CHUEQntB_0OZEPvtWFSN2ju0BDLA4')
-
 bot.run(token)#token de dang https://discord.com/api/oauth2/authorize?client_id=988915373443280896&permissions=8&scope=bot
-#bot.run('OTg4OTM1MTcyNTE2ODgwNDA0.GMSsjK.V-PS_oO1hTXm9Qv4R9pheU2GKx4QIKpn2MAFY4')#token de dong https://discord.com/api/oauth2/authorize?client_id=988935172516880404&permissions=8&scope=bot
-#bot.run("OTg4Mjc0NDYwNTQzMDQ1Njky.GSkAmH.gDfMnxjJoijq1SX7rTRhyov9WgLW4J6STMWJHw")#token de ding https://discord.com/api/oauth2/authorize?client_id=988274460543045692&permissions=8&scope=bot
